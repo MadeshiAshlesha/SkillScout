@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import Spinner from "../components/Spinner";
 import {
   clearAllApplicationErrors,
-  resetApplicationSlice,
   deleteApplication,
   fetchJobSeekerApplications,
+  resetApplicationSlice,
 } from "../store/slices/applicationSlice";
-import Spinner from "../components/Spinner";
 
 const MyApplications = () => {
   const { user, isAuthenticated } = useSelector((state) => state.user);
