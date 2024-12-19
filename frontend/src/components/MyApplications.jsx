@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+<<<<<<< HEAD
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -9,6 +10,18 @@ import {
   fetchJobSeekerApplications,
   resetApplicationSlice,
 } from "../store/slices/applicationSlice";
+=======
+import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import {
+  clearAllApplicationErrors,
+  resetApplicationSlice,
+  deleteApplication,
+  fetchJobSeekerApplications,
+} from "../store/slices/applicationSlice";
+import Spinner from "../components/Spinner";
+>>>>>>> jobportal/main
 
 const MyApplications = () => {
   const { user, isAuthenticated } = useSelector((state) => state.user);

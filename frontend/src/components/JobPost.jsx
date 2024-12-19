@@ -1,12 +1,21 @@
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { CiCircleInfo } from "react-icons/ci";
 import { useDispatch, useSelector } from "react-redux";
+=======
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+>>>>>>> jobportal/main
 import { toast } from "react-toastify";
 import {
   clearAllJobErrors,
   postJob,
   resetJobSlice,
 } from "../store/slices/jobSlice";
+<<<<<<< HEAD
+=======
+import { CiCircleInfo } from "react-icons/ci";
+>>>>>>> jobportal/main
 
 const JobPost = () => {
   const [title, setTitle] = useState("");
@@ -47,6 +56,7 @@ const JobPost = () => {
   ];
 
   const cities = [
+<<<<<<< HEAD
     "Delhi",
     "Mumbai",
     "Bengaluru",
@@ -67,6 +77,28 @@ const JobPost = () => {
     "Vadodara",
     "Ghaziabad",
     "Ludhiana",
+=======
+    "Karachi",
+    "Lahore",
+    "Islamabad",
+    "Rawalpindi",
+    "Faisalabad",
+    "Multan",
+    "Hyderabad",
+    "Quetta",
+    "Peshawar",
+    "Sialkot",
+    "Gujranwala",
+    "Sargodha",
+    "Bahawalpur",
+    "Sukkur",
+    "Mardan",
+    "Mingora",
+    "Sheikhupura",
+    "Mandi Bahauddin",
+    "Larkana",
+    "Nawabshah",
+>>>>>>> jobportal/main
   ];
 
   const { isAuthenticated, user } = useSelector((state) => state.user);
